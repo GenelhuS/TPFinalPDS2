@@ -11,11 +11,7 @@ Produto::Produto(int id_Produto, std::string descricao, int tamanho, int peso, i
 }
 
 std::string Produto::getProduto(){
-    return this->descricao;
+    return descricao;
     
 }
 
-int main(){
-    Produto p1(10, "GELADEIRA", 120, 1.8,5);
-    p1.getProduto();
-}
