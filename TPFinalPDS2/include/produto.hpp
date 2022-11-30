@@ -1,14 +1,15 @@
 #include <iostream>
-#include "vendedor.hpp"
 
 class Produto{
+    int id_Produto;
     std::string descricao;
-    int tam;
+    float tamanho;
     float peso;
     int Qtd_disp;
 
 public:
-    Produto();
+    Produto(int id_Produto, std::string descricao, int tamanho, int peso, int Qtd_disp);
     std::string getProduto();
+    void setProduto();
 
 };

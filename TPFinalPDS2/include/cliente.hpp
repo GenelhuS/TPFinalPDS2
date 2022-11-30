@@ -1,14 +1,17 @@
 #include <iostream>
 #include "usuario.hpp"
+#include "ecommerce.hpp"
+#include "produto.hpp"
 
 class Cliente{
     std::string form_pag;
+    int id_Cliente;
+    std::vector<Produto> Carrinho;
 
 public:
     Cliente();
-    std::string cadastro_cliente();
-    void montarCarrinho();
-    std::string Cliente::getCliente();
-
-
+    void addProdutoCarrinho ();
+    void excluirProdutoCarrinho();
+    void imprimirCarrinho();
+    void getCliente(Cliente);
 };

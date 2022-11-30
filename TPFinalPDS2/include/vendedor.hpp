@@ -1,17 +1,16 @@
 #include <iostream>
 #include <list>
+#include <vector>
 #include <string>
+#include "produto.hpp"
 
 class Vendedor{
-    std::string num_Mei;
-    std::string setor_atual;
-    std::string pag_vendedor;
+    int id_vendedor;
+    std::vector <Produto> estoque_Produtos;
 public:
-    Vendedor();
-    std::string cadastro_vend;
-    std::string getVendedor;
-    std::list<std::string> getProdutosVendedor;
-
-
-
+    Vendedor(int id_vendedor, std::vector <Produto> Lista_Produtos);
+    void addProdutoEstoque();
+    void excluirProdutoEstoque();
+    int getVendedor();
+    void getProdutosVendedor();
 };

@@ -1,4 +1,5 @@
 #include <iostream>
+#include "ecommerce.hpp"
 
 class Usuario{
     std::string nome;
@@ -8,9 +9,7 @@ class Usuario{
     std::string email;  
 public:
     Usuario();
-
-   std::string login_usuario();
-   std::string cadastro_usuario();
+    
 };
 
 
