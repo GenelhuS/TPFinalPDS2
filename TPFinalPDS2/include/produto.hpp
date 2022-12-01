@@ -9,7 +9,11 @@ class Produto{
 
 public:
     Produto(int id_Produto, std::string descricao, int tamanho, int peso, int Qtd_disp);
-    std::string getProduto();
+    int getId();
+    std::string getDescricao();
+    float getTam();
+    float getPeso();
+    int getQtd_disp();
     void setProduto();
 
 };

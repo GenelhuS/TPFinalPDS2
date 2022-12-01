@@ -2,16 +2,27 @@
 #include "produto.hpp"
 
 
-Produto::Produto(int _id_Produto, std::string _descricao, int tam, int _peso, int _Qtd_disp){
-    _id_Produto = id_Produto;
-    _descricao = descricao;
-    tam = tamanho;
-    _peso = peso;
-    _Qtd_disp = Qtd_disp;
-
-}
-std::string Produto::getProduto(){
-    return descricao;
+Produto::Produto(int id_Produto, std::string descricao, int tamanho, int peso, int Qtd_disp){
+    this->id_Produto;
+    this->descricao;
+    this->tamanho;
+    this->peso;
+    this->Qtd_disp;
 }
 
+int Produto::getId(){
+    return this->id_Produto;
+}
+std::string Produto::getDescricao(){
+    return this->descricao;
+ }
+float Produto::getTam(){
+        return this->tamanho;
+    }
+float Produto::getPeso(){
+    return this->peso;
+}
+int Produto::getQtd_disp(){
+    return this->Qtd_disp;
+}
 
