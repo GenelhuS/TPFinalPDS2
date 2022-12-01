@@ -9,7 +9,7 @@ class Cliente{
     std::vector<Produto> Carrinho;
 
 public:
-    Cliente();
+    Cliente(int id_Cliente);
     void addProdutoCarrinho ();
     void excluirProdutoCarrinho();
     void imprimirCarrinho();

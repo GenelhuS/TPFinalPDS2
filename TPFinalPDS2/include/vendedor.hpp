@@ -8,7 +8,7 @@ class Vendedor{
     int id_vendedor;
     std::vector <Produto> estoque_Produtos;
 public:
-    Vendedor(int id_vendedor, std::vector <Produto> Lista_Produtos);
+    Vendedor(int id_vendedor, std::vector <Produto> estoque_Produtos );
     void addProdutoEstoque();
     void excluirProdutoEstoque();
     int getVendedor();

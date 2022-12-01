@@ -3,22 +3,24 @@
 #include "vendedor.hpp"
 #include "produto.hpp"
 
-
-    Vendedor::Vendedor(int _id_vendedor, std::vector <Produto> _estoque_Produtos){
-        _id_vendedor = id_vendedor;
-        _estoque_Produtos = estoque_Produtos;
+    Vendedor::Vendedor(int id_vendedor, std::vector <Produto> estoque_Produtos){
+        this->id_vendedor;
+        this->estoque_Produtos;
     }
 
-    int getVendedor(){
+    int Vendedor::getVendedor(){
+        return this->id_vendedor;
         
     }
     
-    void getProdutosVendedor(int id_vendedor){
-
+    void Vendedor::getProdutosVendedor(){
+        return this->id_vendedor;
+        return this->estoque_Produtos;
 
     }
 
     void Vendedor::addProdutoEstoque(){
+        
     }
     void Vendedor::excluirProdutoEstoque(){
 
