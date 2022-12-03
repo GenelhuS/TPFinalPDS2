@@ -16,3 +16,7 @@ Cliente::Cliente(int id_Cliente, std::string email, std::string senha, std::stri
     _form_pag=forma_pag; 
     _Carrinho={};
 }
+
+void Cliente::imprimirCliente(){
+
+}

@@ -14,5 +14,5 @@ public:
     void addProdutoCarrinho ();
     void excluirProdutoCarrinho();
     void imprimirCarrinho();
-    void getCliente(Cliente);
+    void imprimirCliente(int cpf);
 };

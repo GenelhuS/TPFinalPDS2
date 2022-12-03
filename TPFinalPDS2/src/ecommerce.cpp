@@ -23,3 +23,22 @@ void Ecommerce::cadastro_vendedor(std::string email, std::string senha, std::str
     Vendedores.push_back(vendedorCadastrado);
 
 }
+
+void Ecommerce::imprimir_dados(int cpf){
+
+    for(int i=0; i<(int)Clientes.size(); i++){
+        Cliente clienteEmAnalise=Clientes.at(i);
+        if(clienteEmAnalise.getCPF()==cpf){
+            std::cout<<"Nome:"<<clienteEmAnalise.getNome()<<" "<<"Email:"<<clienteEmAnalise.getEmail()<<" ";
+            std::cout<<"Telefone:"<<clienteEmAnalise.getTelefone()<<" "<<"Data de Nascimento:"<<clienteEmAnalise.getDataNasc()<<std::endl;
+        }
+    }
+    
+    for(int j=0;j<Vendedores.size();j++){
+        Vendedor vendedorEmAnalise = Vendedores.at(j);
+        if(vendedorEmAnalise.getCPF()==cpf){
+            std::cout<<"Nome:"<<vendedorEmAnalise.getNome()<<" "<<"Email:"<<vendedorEmAnalise.getEmail()<<" ";
+            std::cout<<"Telefone:"<<vendedorEmAnalise.getTelefone()<<" "<<"Data de Nascimento:"<<vendedorEmAnalise.getDataNasc()<<std::endl;
+        }
+    }
+}

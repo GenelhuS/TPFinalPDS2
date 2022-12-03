@@ -12,6 +12,14 @@ protected:
     std::string _sexo;
 public:
     Usuario();
+    std::string getEmail();
+    std::string getSenha();
+    std::string getNome();
+    int getCPF();
+    int getTelefone();
+    std::string getDataNasc();
+    std::string getSexo();
+
     
 };
 
