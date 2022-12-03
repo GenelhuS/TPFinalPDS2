@@ -14,5 +14,5 @@ Cliente::Cliente(int id_Cliente, std::string email, std::string senha, std::stri
     _data_nasc=data_nasc;
     _sexo=sexo;
     _form_pag=forma_pag; 
-    std::vector<Produto> _Carrinho={};
+    _Carrinho={};
 }

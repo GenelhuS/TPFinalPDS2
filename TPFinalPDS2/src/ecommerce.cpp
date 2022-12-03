@@ -13,5 +13,13 @@ void Ecommerce::cadastro_cliente(std::string email, std::string senha, std::stri
     int id_Cliente=(int)Clientes.size();
     Cliente clienteCadastrado(id_Cliente, email, senha, nome, cpf, telefone, data_nasc, sexo, forma_pag);
     Clientes.push_back(clienteCadastrado);
-    
+
+}
+
+void Ecommerce::cadastro_vendedor(std::string email, std::string senha, std::string nome, int cpf, int telefone, std::string data_nasc, std::string sexo){
+
+    int id_vendedor=(int)Vendedores.size();
+    Vendedor vendedorCadastrado(id_vendedor, email, senha, nome, cpf, telefone, data_nasc, sexo);
+    Vendedores.push_back(vendedorCadastrado);
+
 }
