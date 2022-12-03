@@ -1,12 +1,15 @@
 #include <iostream>
-#include "ecommerce.hpp"
+//#include "ecommerce.hpp"
 
 class Usuario{
-    std::string nome;
-    int cpf;
-    int tel;
-    std::string data_nasc;
-    std::string email;  
+protected:
+    std::string _senha;
+    std::string _nome;
+    int _cpf;
+    int _tel;
+    std::string _data_nasc;
+    std::string _email;  
+    std::string _sexo;
 public:
     Usuario();
     
