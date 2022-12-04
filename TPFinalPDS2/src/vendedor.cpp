@@ -26,8 +26,11 @@
         
     }
     
-    void Vendedor::getProdutosVendedor(){
+    int Vendedor::getProdutosVendedor(){
         return this->_id_vendedor;
+
+    }
+    int Vendedor::getProdutosVendedor(){
         return this->_estoque_Produtos;
 
     }
