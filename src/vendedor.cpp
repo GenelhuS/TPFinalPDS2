@@ -47,8 +47,10 @@
     }
 
     void Vendedor::excluirProdutoEstoque(int id_Produto){
-        if(id_Produto<_estoque_Produtos.size()+1){
-            _estoque_Produtos.erase(_estoque_Produtos.begin()+id_Produto);
+         for(int i; i<(int)_estoque_Produtos.size();i++){
+            Produto produtoAtual = _estoque_Produtos.at(i);
+            if(produtoAtual.getId()==id_Produto){
+                _estoque_Produtos.erase(_estoque_Produtos.begin()+id_Produto);
+            }
         }
-        else std::cout<<"Esse produto informado não existe e não tem como ser deletado."<<std::endl;
     }
