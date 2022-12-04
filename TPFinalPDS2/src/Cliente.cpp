@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
-#include "usuario.hpp"
-#include "produto.hpp"
-#include "cliente.hpp"
+#include "../include/usuario.hpp"
+#include "../include/produto.hpp"
+#include "../include/cliente.hpp"
 
 Cliente::Cliente(int id_Cliente, std::string email, std::string senha, std::string nome, int cpf, int telefone, std::string data_nasc, std::string sexo, std::string forma_pag){
     _id_Cliente=id_Cliente;
@@ -17,6 +17,8 @@ Cliente::Cliente(int id_Cliente, std::string email, std::string senha, std::stri
     _Carrinho={};
 }
 
-void Cliente::imprimirCliente(){
+void Cliente::imprimirCliente(int cpf){
+
+    
 
 }

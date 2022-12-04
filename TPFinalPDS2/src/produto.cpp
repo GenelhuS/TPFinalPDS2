@@ -1,5 +1,5 @@
 #include <iostream>
-#include "produto.hpp"
+#include "../include/produto.hpp"
 
 
 Produto::Produto(int id_Produto, std::string descricao, int tamanho, int peso, int Qtd_disp){

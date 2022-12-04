@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
-#include "vendedor.hpp"
-#include "produto.hpp"
-#include "usuario.hpp"
+#include "../include/vendedor.hpp"
+#include "../include/produto.hpp"
+#include "../include/usuario.hpp"
 
     Vendedor::Vendedor(int id_vendedor, std::vector <Produto> estoque_Produtos){
         this->_id_vendedor;

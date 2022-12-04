@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include "produto.hpp"
+#include "usuario.hpp"
 
 class Vendedor: public Usuario{
     int _id_vendedor;

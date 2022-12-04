@@ -1,5 +1,5 @@
 #include <iostream>
-#include "usuario.hpp"
+#include "../include/usuario.hpp"
 
 std::string Usuario::getEmail(){
     return _email;

@@ -1,7 +1,7 @@
-#include "vendedor.hpp"
-#include "cliente.hpp"
-#include "produto.hpp"
-#include "ecommerce.hpp"
+#include "../include/vendedor.hpp"
+#include "../include/cliente.hpp"
+#include "../include/produto.hpp"
+#include "../include/ecommerce.hpp"
 
 Ecommerce::Ecommerce(){
     std::vector<Cliente> Clientes;
