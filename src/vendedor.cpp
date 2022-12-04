@@ -34,15 +34,21 @@
         for(int i; i<(int)_estoque_Produtos.size();i++){
             Produto produtoAtual = _estoque_Produtos.at(i);
             std::cout<<produtoAtual.getId()<<" "<<produtoAtual.getDescricao()<<" "<<produtoAtual.getTam()<<" ";
-            std::cout<<produtoAtual.getPeso()<<" "<<produtoAtual.getQtd_disp()<<" "<<std::endl;
+            std::cout<<produtoAtual.getPeso()<<" "<<std::endl;
         }
     }
 
-    void Vendedor::addProdutoEstoque(){
-        
-        
+    void Vendedor::addProdutoEstoque(std::string descricao, int tamanho, int peso){
 
+        int id_Produto=_estoque_Produtos.size()+1;
+        Produto produto(id_Produto,descricao,tamanho,peso);
+        _estoque_Produtos.push_back(produto);
+        
     }
-    void Vendedor::excluirProdutoEstoque(){
 
+    void Vendedor::excluirProdutoEstoque(int id_Produto){
+        if(id_Produto<_estoque_Produtos.size()+1){
+            _estoque_Produtos.erase(_estoque_Produtos.begin()+id_Produto);
+        }
+        else std::cout<<"Esse produto informado não existe e não tem como ser deletado."<<std::endl;
     }

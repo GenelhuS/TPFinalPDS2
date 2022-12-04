@@ -8,15 +8,15 @@ class Produto{
     std::string descricao;
     float tamanho;
     float peso;
-    int Qtd_disp;
+    //int Qtd_disp;
 
 public:
-    Produto(int id_Produto, std::string descricao, int tamanho, int peso, int Qtd_disp);
+    Produto(int id_Produto, std::string descricao, int tamanho, int peso);
     int getId();
     std::string getDescricao();
     float getTam();
     float getPeso();
-    int getQtd_disp();
+    //int getQtd_disp();
     //void setProduto();
 
 };
