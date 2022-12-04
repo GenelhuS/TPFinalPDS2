@@ -1,3 +1,6 @@
+#ifndef PRODUTO 
+#define PRODUTO
+
 #include <iostream>
 
 class Produto{
@@ -14,6 +17,8 @@ public:
     float getTam();
     float getPeso();
     int getQtd_disp();
-    void setProduto();
+    //void setProduto();
 
 };
+
+#endif

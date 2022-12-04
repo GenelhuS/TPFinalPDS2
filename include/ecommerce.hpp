@@ -1,3 +1,6 @@
+#ifndef ECOMMERCE 
+#define ECOMMERCE
+
 #include <iostream>
 #include <vector>
 #include "cliente.hpp"
@@ -21,3 +24,5 @@ public:
 
 
 };
+
+#endif

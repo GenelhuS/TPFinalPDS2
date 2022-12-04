@@ -1,10 +1,7 @@
-all: clean carrinho.o cliente.o ecommerce.o endereco.o produto.o usuario.o vendedor.o
-	g++ carrinho.o src/carrinho.cpp cliente.o src/cliente.cpp ecommerce.o src/ecommerce.cpp endereco.o src/endereco.cpp produto.o src/produto.cpp usuario.o src/usuario.cpp vendedor.o src/vendedor.cpp -o main
+all: clean cliente.o ecommerce.o endereco.o produto.o usuario.o vendedor.o
+	g++ cliente.o src/cliente.cpp ecommerce.o src/ecommerce.cpp endereco.o src/endereco.cpp produto.o src/produto.cpp usuario.o src/usuario.cpp vendedor.o src/vendedor.cpp -o main
 	main
 	make clean
-
-carrinho.o: include/carrinho.hpp
-	g++ -c src/carrinho.cpp
 
 cliente.o: include/cliente.hpp
 	g++ -c src/cliente.cpp
@@ -24,13 +21,12 @@ usuario.o: include/usuario.hpp
 vendedor.o: include/vendedor.hpp
 	g++ -c src/vendedor.cpp
 
-test: clean carrinho.o cliente.o ecommerce.o endereco.o produto.o usuario.o vendedor.o
-	g++ carrinho.o tests/carrinho_test.cpp cliente.o tests/cliente_test.cpp ecommerce.o tests/ecommerce_test.cpp endereco.o tests/endereco_test.cpp produto.o tests/produto_test.cpp usuario.o tests/usuario_test.cpp vendedor.o tests/vendedor_test.cpp -o test
+test: clean cliente.o ecommerce.o endereco.o produto.o usuario.o vendedor.o
+	g++ cliente.o tests/cliente_test.cpp ecommerce.o tests/ecommerce_test.cpp endereco.o tests/endereco_test.cpp produto.o tests/produto_test.cpp usuario.o tests/usuario_test.cpp vendedor.o tests/vendedor_test.cpp -o test
 	test
 	clean
 
 clean: 
-	del carrinho.o
 	del cliente.o
 	del ecommerce.o
 	del endereco.o

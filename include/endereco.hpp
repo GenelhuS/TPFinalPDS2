@@ -1,11 +1,16 @@
+#ifndef ENDERECO 
+#define ENDERECO
+
 #include <iostream>
 
 class Endereco{
-    int cep;
-    std::string pais;
-    std::string num;
-    std::string rua;
+    int _cep;
+    std::string _pais;
+    int _num;
+    std::string _rua;
 public:
-    Endereco();
+    Endereco(int cep, std::string _pais, int num, std::string _rua);
 
 };
+
+#endif
