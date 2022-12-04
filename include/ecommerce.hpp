@@ -20,7 +20,8 @@ public:
     void montar_carrinho(std::vector<std::string> Cliente);
     void Cadastrar_produto();
     void deletar_produto();
-    void login_usuario();
+    int login_cliente(std::string email, std::string senha);
+    int login_vendedor(std::string email, std::string senha);
 
 
 };
