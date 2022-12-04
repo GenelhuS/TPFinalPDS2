@@ -16,9 +16,10 @@
     }
 
     int Vendedor::getVendedor(){
-        return this->_id_vendedor;
-        
+        return this->_id_vendedor;  
     }
+
+
     
      //Esboço que a anne começou a fazer
     //void Vendedor::getProdutosVendedor(){
