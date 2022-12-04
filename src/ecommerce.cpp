@@ -42,3 +42,17 @@ void Ecommerce::imprimir_dados(int cpf){
         }
     }
 }
+
+
+void Ecommerce::imprimir_produtos(){
+    
+    //Essa função deve imprimir todos os produtos disponiveis na plataforma
+    std::cout<<"Abaixo, serão exibidos todos os nossos produtos disponiveis, separados por vendedor"<<std::endl;
+    
+    for(int i=0;i<Vendedores.size();i++){
+        Vendedor vendedorEmAnalise=Vendedores.at(i);
+        std::cout<<"Produtos do vendedor:"<<vendedorEmAnalise.getNome()<<std::endl;
+        vendedorEmAnalise.getProdutosVendedor();
+    }
+
+}

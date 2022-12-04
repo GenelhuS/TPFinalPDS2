@@ -20,10 +20,22 @@
         
     }
     
-    void Vendedor::getProdutosVendedor(){
-        return this->_id_vendedor;
-        return this->_estoque_Produtos;
+     //Esboço que a anne começou a fazer
+    //void Vendedor::getProdutosVendedor(){
+    //    return this->_id_vendedor;
+    //    return this->_estoque_Produtos;
+    //}
 
+
+    //Versao de testes da classe getProdutosVendedor
+    //Pendente formatar a saida da impressão
+
+    void Vendedor::getProdutosVendedor(){
+        for(int i; i<(int)_estoque_Produtos.size();i++){
+            Produto produtoAtual = _estoque_Produtos.at(i);
+            std::cout<<produtoAtual.getId()<<" "<<produtoAtual.getDescricao()<<" "<<produtoAtual.getTam()<<" ";
+            std::cout<<produtoAtual.getPeso()<<" "<<produtoAtual.getQtd_disp()<<" "<<std::endl;
+        }
     }
 
     void Vendedor::addProdutoEstoque(){
