@@ -38,4 +38,6 @@ clean:
 	del produto.o
 	del usuario.o
 	del vendedor.o
+	del test.exe
+	del main
 	
