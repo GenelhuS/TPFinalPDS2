@@ -31,6 +31,26 @@ testEndereco : clean endereco.o
 	test
 	make clean
 
+testVendedor : clean vendedor.o
+	g++ vendedor.o tests/vendedor_test.cpp -o test
+	test
+	make clean
+
+testUsuario : clean usuario.o 
+	g++ usuario.o tests/usuario_test.cpp -o test
+	test
+	make clean
+
+testProduto : clean produto.o
+	g++ produto.o tests/produto_test.cpp -o test
+	test
+	make clean
+
+testEcommerce : clean ecommerce.o
+	g++ ecommerce.o tests/ecommerce_test.cpp -o test
+	test
+	make clean	
+
 clean: 
 	del cliente.o
 	del ecommerce.o

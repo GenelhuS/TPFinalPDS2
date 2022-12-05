@@ -3,7 +3,6 @@
 #include "../third_party/doctest.h"
 using namespace std;
 
-//get perimeter
 
 TEST_CASE("testando as informacoes do endereco"){
         

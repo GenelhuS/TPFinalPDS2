@@ -3,8 +3,6 @@
 #include "../third_party/doctest.h"
 using namespace std;
 
-//get perimeter
-
 TEST_CASE("testando se o cliente foi criado"){
         
 Cliente c(18905,"testgmailcom","senha","cliente",120998,98888,"10/10/2000","F","debito");   
