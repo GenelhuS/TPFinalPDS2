@@ -24,7 +24,7 @@ vendedor.o: include/vendedor.hpp
 test: clean cliente.o ecommerce.o endereco.o produto.o usuario.o vendedor.o
 	g++ cliente.o tests/cliente_test.cpp ecommerce.o tests/ecommerce_test.cpp endereco.o tests/endereco_test.cpp produto.o tests/produto_test.cpp usuario.o tests/usuario_test.cpp vendedor.o tests/vendedor_test.cpp -o test
 	test
-	clean
+	make clean
 
 clean: 
 	del cliente.o
