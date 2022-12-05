@@ -9,7 +9,11 @@ class Endereco{
     int _num;
     std::string _rua;
 public:
-    Endereco(int cep, std::string _pais, int num, std::string _rua);
+    Endereco(int cep, std::string pais, int num, std::string rua);
+    int getCep();
+    std::string getPais();
+    int getNum ();
+    std::string getRua();
 
 };
 

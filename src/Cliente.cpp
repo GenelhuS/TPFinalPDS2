@@ -59,4 +59,5 @@ bool Cliente::verificarCarrinho(int id){
 
           }
      }
+     return false;
 }
