@@ -19,6 +19,7 @@ public:
     void addProdutoCarrinho (Produto produto);
     void excluirProdutoCarrinho(int id);
     void imprimirCarrinho();
+    bool verificarCarrinho(int id);  // descobre se tem o produto no carrinho através da id 
 };
 
 #endif
