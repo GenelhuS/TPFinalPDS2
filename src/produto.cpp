@@ -3,10 +3,10 @@
 
 
 Produto::Produto(int id_Produto, std::string descricao, int tamanho, int peso){
-    this->id_Produto;
-    this->descricao;
-    this->tamanho;
-    this->peso;
+    this->id_Produto = id_Produto;
+    this->descricao = descricao;
+    this->tamanho = tamanho;
+    this->peso = peso;
     //this->Qtd_disp;
 }
 

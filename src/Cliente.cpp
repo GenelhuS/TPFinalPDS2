@@ -48,3 +48,16 @@ void Cliente::excluirProdutoCarrinho(int id){ // recebe a id do produto para loc
    }
 
 }
+
+bool Cliente::verificarCarrinho(int id){
+
+      for(list<Produto>::iterator i = _carrinho.begin() ; i != _carrinho.end() ; i++){
+
+          if(i->getId() == id){
+
+               return true;
+
+          }
+     }
+     return false;
+}
