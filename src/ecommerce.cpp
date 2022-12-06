@@ -26,7 +26,7 @@ void Ecommerce::cadastro_vendedor(std::string email, std::string senha, std::str
 
 void Ecommerce::imprimir_dados(int cpf){
 
-    for(int i=1; i<(int)Clientes.size(); i++){
+    for(int i=0; i<(int)Clientes.size(); i++){
         Cliente clienteEmAnalise=Clientes.at(i);
         if(clienteEmAnalise.getCPF()==cpf){
             std::cout<<"Nome:"<<clienteEmAnalise.getNome()<<" "<<"Email:"<<clienteEmAnalise.getEmail()<<" ";
@@ -34,7 +34,7 @@ void Ecommerce::imprimir_dados(int cpf){
         }
     }
     
-    for(int j=1;j<Vendedores.size();j++){
+    for(int j=0;j<Vendedores.size();j++){
         Vendedor vendedorEmAnalise = Vendedores.at(j);
         if(vendedorEmAnalise.getCPF()==cpf){
             std::cout<<"Nome:"<<vendedorEmAnalise.getNome()<<" "<<"Email:"<<vendedorEmAnalise.getEmail()<<" ";
@@ -51,7 +51,7 @@ void Ecommerce::imprimir_produtos(){
 
     for(int i=0;i<Vendedores.size();i++){
         Vendedor vendedorEmAnalise=Vendedores.at(i);
-        std::cout<<"Produtos do vendedor:"<<vendedorEmAnalise.getNome()<<std::endl;
+        std::cout<<"Produtos do vendedor: "<<vendedorEmAnalise.getNome()<<std::endl;
         vendedorEmAnalise.getProdutosVendedor();
     }
 
@@ -63,10 +63,10 @@ int Ecommerce::login_cliente(std::string email, std::string senha){
     //caso ele ache, vai retornar o numero da posição do cliente dentro do vetor, caso nao encontre, retornará 0 
     //pois 0 é uma posição reservada no vetor para esse tipo de situação
 
-    for(int i=1; i<(int)Clientes.size(); i++){
+    for(int i=0; i<(int)Clientes.size(); i++){
         Cliente clienteEmAnalise=Clientes.at(i);
         if(clienteEmAnalise.getEmail()==email&&clienteEmAnalise.getSenha()==senha){
-            return i;
+            return i+1;
         }
     }
     return 0;
@@ -78,10 +78,10 @@ int Ecommerce::login_vendedor(std::string email, std::string senha){
     //caso ele ache, vai retornar o numero da posição do vendedor dentro do vetor, caso nao encontre, retornará 0 
     //pois 0 é uma posição reservada no vetor para esse tipo de situação
 
-    for(int i=1; i<(int)Vendedores.size(); i++){
+    for(int i=0; i<(int)Vendedores.size(); i++){
         Vendedor vendedorEmAnalise=Vendedores.at(i);
         if(vendedorEmAnalise.getEmail()==email&&vendedorEmAnalise.getSenha()==senha){
-            return i;
+            return i+1;
         }
     }
     return 0;

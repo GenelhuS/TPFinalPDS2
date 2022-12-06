@@ -6,7 +6,7 @@ all: clean cliente.o ecommerce.o endereco.o produto.o usuario.o vendedor.o
 cliente.o: include/cliente.hpp
 	g++ -c src/cliente.cpp
 
-ecommerce.o: include/ecommerce.hpp
+ecommerce.o: include/ecommerce.hpp 
 	g++ -c src/ecommerce.cpp
 
 endereco.o: include/endereco.hpp
@@ -46,8 +46,8 @@ testProduto : clean produto.o
 	test
 	make clean
 
-testEcommerce : clean ecommerce.o
-	g++ ecommerce.o tests/ecommerce_test.cpp -o test
+testEcommerce : clean ecommerce.o usuario.o cliente.o vendedor.o produto.o
+	g++ ecommerce.o usuario.o vendedor.o cliente.o produto.o tests/ecommerce_test.cpp -o test
 	test
 	make clean	
 
