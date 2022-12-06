@@ -32,8 +32,10 @@
     //Pendente formatar a saida da impressão
 
     void Vendedor::getProdutosVendedor(){
-        for(int i; i<(int)_estoque_Produtos.size();i++){
-            Produto produtoAtual = _estoque_Produtos.at(i);
+        std::list<Produto>::iterator i;    //uso de list para acessar os produtos
+    
+        for(i =_estoque_Produtos.begin(); i !=_estoque_Produtos.end() ;i++){
+            Produto produtoAtual = *i;
             std::cout<<produtoAtual.getId()<<" "<<produtoAtual.getDescricao()<<" "<<produtoAtual.getTam()<<" ";
             std::cout<<produtoAtual.getPeso()<<" "<<std::endl;
         }
@@ -48,10 +50,11 @@
     }
 
     void Vendedor::excluirProdutoEstoque(int id_Produto){
-         for(int i; i<(int)_estoque_Produtos.size();i++){
-            Produto produtoAtual = _estoque_Produtos.at(i);
-            if(produtoAtual.getId()==id_Produto){
-                _estoque_Produtos.erase(_estoque_Produtos.begin()+id_Produto);
+
+        std::list<Produto>::iterator i;
+        for(i =_estoque_Produtos.begin(); i !=_estoque_Produtos.end() ;i++){
+            if(i->getId()==id_Produto){
+                _estoque_Produtos.erase(i);
             }
         }
     }

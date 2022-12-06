@@ -19,7 +19,7 @@ Cliente c(10587946,"testgmailcom","senha","cliente",120998,98888,"10/10/2000","F
     
     c.addProdutoCarrinho(copo);
 
-    c.imprimirCarrinho();
+   // c.imprimirCarrinho();
 
     CHECK(c.verificarCarrinho(1025));   // se true, o produto copo foi encontrado no carrinho e a função
                                         // verificar carrinho tambem funciona

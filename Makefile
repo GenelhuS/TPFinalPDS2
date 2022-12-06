@@ -31,8 +31,8 @@ testEndereco : clean endereco.o
 	test
 	make clean
 
-testVendedor : clean vendedor.o
-	g++ vendedor.o tests/vendedor_test.cpp -o test
+testVendedor : clean vendedor.o usuario.o produto.o
+	g++ vendedor.o tests/vendedor_test.cpp usuario.o produto.o -o test
 	test
 	make clean
 
