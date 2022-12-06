@@ -1,6 +1,6 @@
-#include "../include/vendedor.hpp"
-#include "../include/cliente.hpp"
-#include "../include/produto.hpp"
+//#include "../include/vendedor.hpp"
+//#include "../include/cliente.hpp"
+//#include "../include/produto.hpp"
 #include "../include/ecommerce.hpp"
 
 Ecommerce::Ecommerce(){
