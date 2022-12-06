@@ -1,5 +1,5 @@
 all: clean cliente.o ecommerce.o endereco.o produto.o usuario.o vendedor.o
-	g++ cliente.o src/cliente.cpp ecommerce.o src/ecommerce.cpp endereco.o src/endereco.cpp produto.o src/produto.cpp usuario.o src/usuario.cpp vendedor.o src/vendedor.cpp -o main
+	g++ cliente.o ecommerce.o endereco.o produto.o usuario.o vendedor.o src/main.cpp -o main
 	main
 	make clean
 

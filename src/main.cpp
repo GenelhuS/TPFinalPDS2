@@ -6,7 +6,7 @@
 #include "../include/produto.hpp"
 #include "../include/ecommerce.hpp"
 
-void main(){
+int main(){
     int opcao;
     Ecommerce ecommerce = Ecommerce();
     std::cout<<"Bem vindo ao sistema de loja virtual Ecommerce"<<std::endl;
@@ -115,4 +115,5 @@ void main(){
             }break;
         }
     }
+    return 0;
 }
