@@ -1,11 +1,10 @@
 #include <iostream>
-#include<ecommerce.hpp>
-#include<usuario.hpp>
-#include<produto.hpp>
-#include<endereco.hpp>
-#include<cliente.hpp>
-#include<vendedor.hpp>
-
+#include "../include/usuario.hpp"
+#include "../include/endereco.hpp"
+#include "../include/vendedor.hpp"
+#include "../include/cliente.hpp"
+#include "../include/produto.hpp"
+#include "../include/ecommerce.hpp"
 
 void main(){
     int opcao;
