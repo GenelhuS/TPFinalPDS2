@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-#include "doctest.h"
-
-
-
-
-
-TEST_CASE(){
-    CHECK()
-}
-
-=======
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "../include/cliente.hpp"
 #include "../third_party/doctest.h"
@@ -73,4 +61,3 @@ Cliente c(108885,"testgmailcom","senha","cliente",120998,98888,"10/10/2000","F",
 
 
 }
->>>>>>> 0e5b64e9a0e77bffb7df63def59902148965b82b

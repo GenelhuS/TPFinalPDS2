@@ -22,7 +22,7 @@ vendedor.o: include/vendedor.hpp
 	g++ -c src/vendedor.cpp
 
 testCliente: clean cliente.o usuario.o produto.o
-	g++ cliente.o tests/cliente_test.cpp usuario.o tests/usuario_test.cpp produto.o tests/produto_test.cpp -o test
+	g++ cliente.o tests/cliente_test.cpp usuario.o produto.o -o test
 	test
 	make clean
 
