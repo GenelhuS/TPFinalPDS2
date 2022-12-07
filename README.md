@@ -1,4 +1,4 @@
-# TPFinalPDS2
+# TPFinalPDS2 - Ecommerce
 Repositório criado para armazenar o projeto de um sistema desenvolvido para o trabalho final da disciplina de PDS II.
 
 ## Autores
