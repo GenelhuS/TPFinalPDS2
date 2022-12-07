@@ -21,6 +21,11 @@ usuario.o: include/usuario.hpp
 vendedor.o: include/vendedor.hpp
 	g++ -c src/vendedor.cpp
 
+test: clean cliente.o ecommerce.o endereco.o produto.o usuario.o vendedor.o
+	g++ cliente.o ecommerce.o endereco.o produto.o usuario.o vendedor.o tests/conjuntoteste.cpp -o test
+	test
+	make clean
+
 testCliente: clean cliente.o usuario.o produto.o              
 	g++ cliente.o tests/cliente_test.cpp usuario.o produto.o -o test
 	test
@@ -59,5 +64,5 @@ clean:
 	del usuario.o
 	del vendedor.o
 	del test.exe
-	del main
+	del main.exe
 	

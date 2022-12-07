@@ -29,8 +29,8 @@ void Ecommerce::imprimir_dados(int cpf){
     for(int i=0; i<(int)Clientes.size(); i++){
         Cliente clienteEmAnalise=Clientes.at(i);
         if(clienteEmAnalise.getCPF()==cpf){
-            std::cout<<"Nome:"<<clienteEmAnalise.getNome()<<" "<<"Email:"<<clienteEmAnalise.getEmail()<<" ";
-            std::cout<<"Telefone:"<<clienteEmAnalise.getTelefone()<<" "<<"Data de Nascimento:"<<clienteEmAnalise.getDataNasc()<<std::endl;
+            std::cout<<"Nome:"<<clienteEmAnalise.getNome()<<std::endl<<" "<<"Email:"<<clienteEmAnalise.getEmail()<<std::endl<<" ";
+            std::cout<<"Telefone:"<<clienteEmAnalise.getTelefone()<<std::endl<<" "<<"Data de Nascimento:"<<clienteEmAnalise.getDataNasc()<<std::endl;
         }
     }
     

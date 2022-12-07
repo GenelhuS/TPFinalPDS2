@@ -10,17 +10,23 @@ int main(){
     int opcao;
     Ecommerce ecommerce = Ecommerce();
     std::cout<<"Bem vindo ao sistema de loja virtual Ecommerce"<<std::endl;
-    std::cout<<"Digite 1 para criar sua conta ou 2 para fazer login";
-    while(std::cin>>opcao){
+    
+    while(1){
+        std::cout<<"Digite 1 para criar sua conta ou 2 para fazer login"<<std::endl;
+        std::cin>>opcao;
         switch(opcao){
             //cadastro na plataforma
             case 1:{
                 std::string email; std::string senha; std::string nome; int cpf; int telefone; std::string data_nasc; std::string sexo; std::string forma_pag; 
                 int controleMenuCadastro;
-
-                std::cout<<"Digite 1 para cadastrar cliente e 2 para cadastrar vendedor";
+                do{
+                std::cout<<"Digite 1 para cadastrar cliente e 2 para cadastrar vendedor"<<std::endl;
                 std::cin>>controleMenuCadastro;
-
+                if(controleMenuCadastro < 1 || controleMenuCadastro > 2 || controleMenuCadastro == 0){
+                    std::cout << "Entrada invalida, digite novamente"<<std::endl;
+                }
+                }
+                while(controleMenuCadastro < 1 || controleMenuCadastro > 2 || controleMenuCadastro == 0);
                 switch(controleMenuCadastro){
                     case 1:{
                         std::cout<<"Digite o email e a senha:"<<std::endl;
@@ -67,9 +73,14 @@ int main(){
             //login na plataforma, como cliente ou vendedor
             case 2:{
                 int controleMenuLogin;
+                do{
                 std::cout<<"Digite 1 para fazer login como cliente ou 2 para fazer login como vendedor:"<<std::endl;
                 std::cin>>controleMenuLogin;
-
+                if(controleMenuLogin< 1 || controleMenuLogin > 2 || controleMenuLogin == 0){
+                    std::cout<< "Entrada invalida, digite novamente" << std::endl;
+                }
+                }
+                while(controleMenuLogin< 1 || controleMenuLogin > 2 || controleMenuLogin == 0);
                 switch (controleMenuLogin){
 
                     case 1:{

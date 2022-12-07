@@ -10,7 +10,7 @@ TEST_CASE("testando se o ecommerce foi criado alem das funcoes cadastro cliente 
     comercio.cadastro_cliente("testhotmailcom","senha","cliente",120998,98888,"10/10/2000","F","debito");   
     
     CHECK_EQ(comercio.login_cliente("testgmailcom","senha") , 1 );   
-    CHECK_EQ(comercio.login_cliente("testhotmailcom","senha") , 2 );   
+    CHECK_EQ(comercio.login_cliente("testhotmailcom","senha") , 3 );   
 
 }
 
