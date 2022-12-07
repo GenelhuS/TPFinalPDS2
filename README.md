@@ -9,6 +9,9 @@ Repositório criado para armazenar o projeto de um sistema desenvolvido para o t
 ## Descricao:
  O proposto trabalho baseia-se em um código que gerencia uma plataforma de vendas online (e-commerce), tal loja funciona num formato de marketplace (venda dos mais variados produtos). O trabalho propõe previamente que o usuário consiga utilizar um carrinho, com diversos produtos, formas de pagamento e demais outras funcionalidades…
 
+ Abaixo, o link para um fluxograma com o esquema de funcionamento do programa.
+ [Fluxograma](https://app.diagrams.net/#G187UrcdvRXU-SZqLq82HMT6UUiYznhJBy)
+
 **User histories utilizadas:**
 
 a) Eu como possível cliente gostaria de ver detalhes dos produtos para fazer uma compra mais consciente;  
