@@ -43,4 +43,17 @@ Segue o link para acessar o nosso diagrama de classes de forma interativa:
 
 [Clique aqui para acessar o diagrama de classes](https://app.diagrams.net/#G1bF9o_KUhCVYBYQYlOPGzxsOjcseLsnDg)
 
+## Como compilar o codigo
 
+Clone o repositorio em sua máquina e digite **make** dentro da pasta do projeto.
+
+## Como executar os testes
+
+Clone o repositorio em sua máquina e digite um dos comandos abaixo, cada um, refere-se ao teste automatizado de uma classe.  
+
+- make testCliente
+- make testEcommerce
+- make testEndereco
+- make testProduto
+- make testUsuario
+- make testVendedor
