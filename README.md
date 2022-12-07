@@ -48,11 +48,13 @@ Segue o link para acessar o nosso diagrama de classes de forma interativa:
 
 ## Como compilar o codigo
 
-Clone o repositorio em sua máquina e digite **make** dentro da pasta do projeto.
+Clone o repositorio em sua máquina e digite **make** dentro da pasta do projeto. 
+O makefile foi configurado em ambiente windows. 
 
 ## Como executar os testes
 
-Clone o repositorio em sua máquina e digite um dos comandos abaixo, cada um, refere-se ao teste automatizado de uma classe.  
+É possível executar todos os testes de uma vez só, para isso basta usar o comando "make test".
+Existe também a opção de executar os testes de acordo com suas respectivas classes, neste caso, digite um dos comandos abaixo, cada um refere-se ao teste automatizado de uma classe.  
 
 - make testCliente
 - make testEcommerce
@@ -60,3 +62,4 @@ Clone o repositorio em sua máquina e digite um dos comandos abaixo, cada um, re
 - make testProduto
 - make testUsuario
 - make testVendedor
+
